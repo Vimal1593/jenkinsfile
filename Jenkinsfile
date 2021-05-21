@@ -13,7 +13,7 @@ stages{
   }
   stage('jenkins build alerts'){
    steps{
-  slackSend(channel: '#jenkinsit', color: '#009933', message: 'job1 build sucessful')
+  slackSend channel: '#jenkinsit', color: '#009933', message: 'build completed', teamDomain: 'mvsolutionsgroup', tokenCredentialId: 'aaa'
   }
   }
   }
